@@ -1,0 +1,261 @@
+/* Header Container */
+.custom-header {
+    background: white;
+    /* border-bottom: 2px solid #ff8aa0; */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  /* Inner Header Container */
+  .custom-header-container {
+   
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+ 
+  /* Brand Section */
+  .custom-header-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    color: #2a2a2a;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .custom-header-icon {
+    color: #ff6b81;
+  }
+  
+  .custom-header-title {
+    color: #2a2a2a;
+    font-weight: 700;
+    transition: color 0.3s ease;
+  }
+  
+
+  
+  /* Menu Button */
+  .custom-header-menu-button {
+    border: 1px solid #ff8aa0;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+  }
+  
+  .custom-header-menu-button:hover {
+    background-color: #ffe0e9;
+    transform: scale(1.1);
+  }
+  
+  /* Menu Icon */
+  .custom-header-menu-icon {
+    color: #2a2a2a;
+  }
+  
+  /* Sheet Content */
+  .custom-header-sheet {
+    background-color: #ffe0e9;
+    border-right: 2px solid #ff8aa0;
+    box-shadow: 4px 0px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Desktop Menu */
+  .custom-header-desktop-menu {
+    display: flex;
+    gap: 1.5rem;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: #2a2a2a;
+  }
+  
+  /* Desktop Right Section */
+  .custom-header-desktop-right {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .custom-header-container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+  
+  @media (max-width: 468px) {
+    .custom-header {
+      padding: 0.5rem 1rem;
+    }
+  
+    .custom-header-title {
+      font-size: 1rem;
+    }
+  }
+  /* Search Container */
+.custom-header-search {
+    flex: 1;
+    max-width: 400px;
+    position: relative;
+  }
+  
+  /* Search Input */
+  .custom-search-input {
+    width: 60%;
+    padding: 0.5rem 1rem;
+    padding-left: 2.5rem; /* Spacing for the search icon */
+    border: 1px solid #5c5c5d; /* Light blue border */
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: #2a2a2a;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .custom-search-input::placeholder {
+    font-style: italic;
+    color: #3d3e3f; /* Subtle blue placeholder */
+    opacity: 0.9;
+  }
+  
+  /* Search Icon */
+  .custom-search-icon {
+    pointer-events: none;
+    color: #000; /* Matches the placeholder color */
+  }
+  
+  .custom-search-input:focus {
+    outline: none;
+    border-color: #42a5f5; /* Slightly darker blue border on focus */
+    box-shadow: 0px 0px 6px rgba(66, 165, 245, 0.6); /* Blue glow on focus */
+  }
+  
+  /* Placeholder on Focus */
+  .custom-search-input:focus::placeholder {
+    color: #040505; /* Darker blue placeholder */
+    opacity: 0.8;
+  }
+  /* Base styling for the navigation item */
+  .custom-nav-new {
+    display: flex;
+    flex-direction: column;
+  
+    
+  }
+  
+  .custom-nav-new .nav-item {
+    position: relative;
+    font-size: 0.875rem; /* text-sm */
+    font-weight: 500; /* font-medium */
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    font-size: 12px;
+    padding: 5px 15px;
+    font-weight: bold;
+   
+  }
+  
+  .custom-nav-new .nav-item:hover {
+    color: royalblue;
+    transform: scale(1.05);
+  }
+  
+  .custom-nav-new .nav-item::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 0.5px;
+    background-color: black;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .custom-nav-new .nav-item:hover::after {
+    width: 100%;
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .custom-nav-new .nav-item:not(:hover)::after {
+    width: 0;
+    transition: width 0.3s ease-in-out;
+  }
+  
+ 
+  
+  .custom-nav-new .nav-item:hover::before {
+    transform: rotate(5deg);
+    transition: transform 0.3s ease;
+  }
+  
+  @media (min-width: 1024px) {
+    .custom-nav-new {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .custom-nav-new .nav-item {
+      margin-bottom: 0;
+    }
+  }
+  
+  .custom-header-brand {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .custom-header-logo {
+    height: 60px; /* Set the desired height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the image scales without distorting */
+  }
+  
+  .custom-header-title {
+    font-weight: bold;
+    font-size: 1.25rem; /* Adjust font size as needed */
+  }
+  
+  
+  .custom-header-logo {
+    animation: shimmer 2s forwards;
+   
+    background: linear-gradient(
+      120deg,
+      rgba(255, 255, 255, 0.8),
+      rgba(255, 255, 255, 0.95),
+      rgba(255, 255, 255, 0.8)
+    );
+    border-radius: 12px;
+    
+    transition: all 0.3s ease;
+  }
+  
+  .custom-header-logo:hover {
+    box-shadow: 
+      0 4px 15px rgba(0, 0, 0, 0.08),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+    transform: translateY(-1px);
+  }
+  
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
